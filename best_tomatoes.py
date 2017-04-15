@@ -14,14 +14,23 @@ main_page_head = '''
     <!-- Bootstrap 3 -->
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Slab" rel="stylesheet">
     <script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
     <script src="https://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
     <style type="text/css" media="screen">
         body {
             padding-top: 80px;
+            background-image: url("./swirl_pattern/swirl_pattern.png") 
         }
         h2 {
-            font-size: 20px;
+            font-family: 'Josefin Slab', serif;
+            font-size: 2em;
+            //font-weight: bold;
+        }
+        .navbar-inverse .navbar-brand {
+            color: white;
+            font-family: 'Josefin Slab', serif;
+            font-weight: 1.5em;
         }
         #trailer .modal-dialog {
             margin-top: 200px;
@@ -42,8 +51,8 @@ main_page_head = '''
             margin-bottom: 20px;
             padding-top: 20px;
         }
-        .movie-tile:hover {
-            background-color: #EEE;
+        img:hover {
+            filter: blur(2px);
             cursor: pointer;
         }
         .scale-media {
@@ -126,7 +135,9 @@ main_page_content = '''
 # A single movie entry html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
-    <img src="{poster_image_url}" width="250" height="342">
+    <a href="#" title="{storyline}">
+        <img src="{poster_image_url}" width="250" height="342">
+    </a>
     <h2>{movie_title}</h2>
 </div>
 '''
@@ -147,9 +158,9 @@ def create_movie_tiles_content(movies):
         # Append the tile for the movie with its content filled in
         content += movie_tile_content.format(
             movie_title=movie.title,
+            storyline=movie.storyline,
             poster_image_url=movie.poster_image_url,
-            trailer_youtube_id=trailer_youtube_id
-        )
+            trailer_youtube_id=trailer_youtube_id)
     return content
 
 

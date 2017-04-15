@@ -2,7 +2,7 @@ import best_tomatoes
 import media
 
 logan = media.Movie("Logan",
-                        "The Wolferin meets a young mutant girl who is very much like him.",
+                        "The Wolverine meets a young mutant girl who is very much like him.",
                         "http://www.beliefnet.com/columnists/moviemom/files/2017/03/logan.jpg",
                         "https://www.youtube.com/watch?v=RH3OxVFvTeg")
 
@@ -22,7 +22,7 @@ finding_dory = media.Movie("Finding Dory",
                            "https://www.youtube.com/watch?v=UXpe8-zCwhI")
 
 scarface = media.Movie("Scarface",
-                       "The road to power of a Cuban man",
+                       "An immigrant Cuban man on his way to become the most powerful drug lord in the US.",
                        "http://static.tvgcdn.net/rovi/showcards/movie/116910/thumbs/16956231_1300x1733.jpg",
                        "https://www.youtube.com/watch?v=7pQQHnqBa2E")
 
