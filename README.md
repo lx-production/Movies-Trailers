@@ -11,11 +11,9 @@ An HTML/CSS/Javascript template showing a list of your favorite movies generated
 
 ## Modifications made to the original code
 
+* Change the page title
 * Shows movie's summary on mouse hover
 * Blur movie's poster on mouse hover
 * New background downloaded from Subtle Patterns
 * New font from Google Fonts
 * Increased Youtube window size
-
-
-
