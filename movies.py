@@ -33,5 +33,6 @@ casino_royal = media.Movie("Casino Royal",
 
 movies = [logan, jungle_book, the_great_wall, finding_dory, scarface, casino_royal]
 
-best_tomatoes.open_movies_page(movies)  #Run project
+# Run project
+best_tomatoes.open_movies_page(movies)  
 

@@ -132,7 +132,7 @@ main_page_content = '''
 '''
 
 
-# A single movie entry html template
+# A single movie tile html template
 movie_tile_content = '''
 <div class="col-md-6 col-lg-4 movie-tile text-center" data-trailer-youtube-id="{trailer_youtube_id}" data-toggle="modal" data-target="#trailer">
     <a href="#" title="{storyline}">
@@ -144,7 +144,7 @@ movie_tile_content = '''
 
 
 def create_movie_tiles_content(movies):
-    # The HTML content for this section of the page
+    '''The HTML content for the movie section of the page'''
     content = ''
     for movie in movies:
         # Using regex to extract the youtube ID from the url
@@ -165,7 +165,7 @@ def create_movie_tiles_content(movies):
 
 
 def open_movies_page(movies):
-    # Create or overwrite the output file
+    '''Create or overwrite the html output file'''
     output_file = open('best_tomatoes.html', 'w')
 
     # Replace the movie tiles placeholder generated content
