@@ -4,7 +4,7 @@
 
 An HTML/CSS/Javascript template showing a list of your favorite movies generated from Python.
 
-[Screenshot](http://i.imgur.com/X1pmA0m.jpg)
+![Screenshot](http://i.imgur.com/X1pmA0m.jpg)
 
 ## Requirements
 
