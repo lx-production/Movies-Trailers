@@ -4,6 +4,12 @@
 
 An HTML/CSS/Javascript template showing a list of your favorite movies generated from Python.
 
+[Screenshot](http://i.imgur.com/X1pmA0m.jpg)
+
+## Requirements
+
+* Python 2.7 or any newer version
+
 ## How to run
 
 1. Clone the entire repo to your computer
